@@ -1,0 +1,86 @@
+/* NewsList.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.App-header {
+    background-color: #282c34;
+    padding: 20px;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the header appears above other content */
+}
+
+.fetch-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.fetch-button:hover {
+    background-color: #0056b3;
+}
+
+.news-container {
+    padding-top: 70px; /* Adjust according to header height to avoid content underlap */
+}
+
+.news-list-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.news-item {
+    margin: 20px 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.news-item-content {
+    flex-grow: 1;
+}
+
+.news-item-content a {
+    font-size: 1.2em;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.news-item-content a:hover {
+    text-decoration: underline;
+}
+
+.news-item-content p {
+    margin: 10px 0;
+    color: #333;
+}
+
+.news-item-content small {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+}
+
+.loading-indicator {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.2em;
+    color: #666;
+}
